@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Himanshu • Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">H<span>i</span>manshu</a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link active" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ✅ Fixed Hero / Home Section -->
+  <section class="section hero" id="home" aria-label="Home">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Himanshu</h1>
+        <h2 class="subtitle">Aspiring <span class="accent">Web Developer</span> & <span class="accent">Cloud Enthusiast</span></h2>
+        <p class="lead">
+          I build responsive, user-centric websites and scalable, high-performance applications.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="hero__image">
+        <img src="image/profile.jpg" alt="Himanshu Portfolio Image">
+      </div>
+    </div>
+    <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></button>
+  </section>
+  <!-- ✅ End of Fixed Hero Section -->
+
+  <!-- About -->
+  <section class="section" id="about" aria-label="About">
+    <div class="container grid-2">
+      <div class="about__media">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Working at a desk" />
+      </div>
+      <div>
+        <h2 class="section__title">About Me</h2>
+        <p>
+          I am a Computer Science student with practical experience in web development and cloud computing,
+          passionate about designing responsive, user-centric websites and building scalable, high-performance applications.
+        </p>
+        <p>
+          I enjoy translating ideas into clean interfaces and reliable systems, focusing on accessibility,
+          performance, and maintainable code.
+        </p>
+        <ul class="about__list">
+          <li><i class="fa-solid fa-check"></i> Clean, semantic HTML5</li>
+          <li><i class="fa-solid fa-check"></i> Modern CSS (Flexbox/Grid, animations)</li>
+          <li><i class="fa-solid fa-check"></i> Python & JAVA </li>
+          <li><i class="fa-solid fa-check"></i> AWS basics (EC2, S3, IAM, VPC)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section--muted" id="services" aria-label="Services">
+    <div class="container">
+      <h2 class="section__title center">Services</h2>
+      <div class="cards">
+        <article class="card">
+          <i class="fa-solid fa-code card__icon"></i>
+          <h3>Web Development</h3>
+          <p>Responsive, accessible, and performant websites tailored to your goals.</p>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-cloud card__icon"></i>
+          <h3>Cloud-Ready Solutions</h3>
+          <p>Deployable architectures and basic AWS workflows for scalability.</p>
+        </article>
+        <article class="card">
+          <i class="fa-solid fa-gears card__icon"></i>
+          <h3>Automation & Tools</h3>
+          <p>Reusable components, clean tooling, and workflow optimizations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills" aria-label="Skills">
+    <div class="container">
+      <h2 class="section__title center">Skills</h2>
+      <div class="skills-circles">
+        <div class="skill"><div class="circle" data-percentage="90"><span class="circle__value">0%</span></div><p>HTML</p></div>
+        <div class="skill"><div class="circle" data-percentage="85"><span class="circle__value">0%</span></div><p>CSS</p></div>
+        <div class="skill"><div class="circle" data-percentage="85"><span class="circle__value">0%</span></div><p>Python</p></div>
+        <div class="skill"><div class="circle" data-percentage="80"><span class="circle__value">0%</span></div><p>My SQL</p></div>
+        <div class="skill"><div class="circle" data-percentage="75"><span class="circle__value">0%</span></div><p>Java</p></div>
+        <div class="skill"><div class="circle" data-percentage="75"><span class="circle__value">0%</span></div><p>JavaScript</p></div>
+        <div class="skill"><div class="circle" data-percentage="65"><span class="circle__value">0%</span></div><p>AWS</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section--muted" id="projects" aria-label="Projects">
+    <div class="container">
+      <h2 class="section__title center">Projects</h2>
+      <div class="cards">
+        <article class="card card--project">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Portfolio preview"/>
+          <div class="card__body">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal site showcasing skills, projects, and contact.</p>
+            <div class="card__actions"><a href="#" class="btn btn--ghost">Live</a><a href="#" class="btn btn--primary">Code</a></div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Weather app preview"/>
+          <div class="card__body">
+            <h3>Weather App</h3>
+            <p>Real-time weather with API integration and clean UI.</p>
+            <div class="card__actions"><a href="#" class="btn btn--ghost">Live</a><a href="#" class="btn btn--primary">Code</a></div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Student calculator preview"/>
+          <div class="card__body">
+            <h3>Student Grade Calculator</h3>
+            <p>Java console app with input validation and clear output.</p>
+            <div class="card__actions"><a href="#" class="btn btn--ghost">Live</a><a href="#" class="btn btn--primary">Code</a></div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <img src="What’s Computer Program.jpg" alt="To-Do-List preview"/>
+          <div class="card__body">
+            <h3>To-Do-List</h3>
+            <p>To-Do List Web Application using HTML, CSS, and JavaScript console app with input validation and clear output.</p>
+            <div class="card__actions"><a href="#" class="btn btn--ghost">Live</a><a href="#" class="btn btn--primary">Code</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="container">
+      <h2 class="section__title center">Contact</h2>
+      <form class="contact" id="contactForm">
+        <div class="grid-2">
+          <input class="input" type="text" name="name" placeholder="Your Name" required />
+          <input class="input" type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <input class="input" type="text" name="subject" placeholder="Subject" />
+        <textarea class="input" name="message" rows="6" placeholder="Your Message" required></textarea>
+        <div class="center"><button class="btn btn--primary" type="submit">Send Message</button></div>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> Himanshu. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://linkedin.com/in/himanshu-5708a8314" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Himanshu1804-Dusad" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:himanshudusad08@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
